@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/upload.css">
+	<title>Upload</title>
+</head>
+<body class="center">
+<form action="/upload" method="post" enctype="multipart/form-data">
+	<div class="upload">
+		<label for="file" class="file center" >select files</label>
+		<label for="submit" class="submit center"></label>
+	</div>
+	<div class="settings">
+		<div class="rename">
+			<input id="rename" type="checkbox" name="rename">
+			<label for="rename">Save original file names<span></span></label>
+		</div>
+		<div class="password">
+			<span>Password</span><input id="pwd" type="password" name="password">
+		</div>
+	</div>
+	<input id="file" type="file" name="files" multiple required>
+	<input id="submit" type="submit" name="submit">
+</form>
+<div class="console-outer">
+	<div class="console"><noscript class="error">JavaScript is disabled. Some interface elements may be not displayed correctly.</noscript></div>
+</div>
+
+<script src="/js/upload.js"></script>
+</body>
+</html>

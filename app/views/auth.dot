@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/auth.css">
+	<title>Auth</title>
+</head>
+<body class="center">
+{{#def.return}}
+<form action="/auth" method="post">
+	<div class="password">
+		<span>Password</span><input type="password" name="password" autofocus required>
+	</div>
+	<div class="submit center">
+		<input name="file" value="{{= it.file }}">
+		<input id="submit" type="submit" value="submit" name="submit">
+		<label class="center" for="submit">Submit</label>
+	</div>
+	{{? it.wrong }}
+		<div class="error center">
+			Wrong password
+		</div>
+	{{?}}
+</form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+*{margin: 0; padding: 0; border: none; box-sizing: border-box;}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("/fonts/OpenSans-Regular.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: "OpenSans-Semibold";
+	src: url("/fonts/OpenSans-Semibold.woff2") format('woff2');
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #21333e;
+	font: 14px OpenSans;
+	-webkit-font-smoothing: antialiased;
+	color: snow;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+}
+
+.password {
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 0 2px;
+}
+
+.password input {
+	width: 107px;
+	margin-left: 5px;
+	background: transparent;
+	border-bottom: 1px solid #00a514;
+	color: snow;
+}
+
+.password input:focus {
+	outline: none;
+	border-bottom: 1px solid #00f514;
+}
+
+.password span {
+	cursor: default;
+}
+
+.submit {
+	height: 25px;
+	background: #910b00;
+	border-radius: 2px;
+	text-transform: uppercase;
+	font: 15px OpenSans-Semibold;
+}
+
+.submit label {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	padding-bottom: 1px;
+}
+
+.submit:hover {
+	background: #a50b00;
+}
+
+.submit input {
+	display: none;
+}
+
+.error {
+	color: red;
+}

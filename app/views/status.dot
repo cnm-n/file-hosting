@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/status.css">
+	<title>{{= it.description }}</title>
+</head>
+<body>
+	{{#def.return}}
+	<div class="status">
+		<span class="code">{{= it.code }}</span>
+		<span class="description">{{= it.description }}</span>
+	</div>
+	{{? it.addition }}
+		<div class="addition">
+			{{= it.addition }}
+		</div>
+	{{?}}
+</body>
+</html>

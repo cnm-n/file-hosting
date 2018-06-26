@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0; border: none; box-sizing: border-box;}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("/fonts/OpenSans-Regular.woff2") format('woff2');
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #21333e;
+	font: 14px OpenSans;
+	-webkit-font-smoothing: antialiased;
+	color: snow;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	display: block;
+}
+
+a:link, a:visited {
+	color: snow;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

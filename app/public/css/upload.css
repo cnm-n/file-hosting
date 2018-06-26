@@ -1,0 +1,190 @@
+*{margin: 0; padding: 0; border: none; box-sizing: border-box;}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("/fonts/OpenSans-Regular.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("/fonts/OpenSans-Bold.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: "upload";
+	src: url("/fonts/upload.woff2") format('woff2');
+}
+
+@font-face {
+	font-family: "password";
+	src: url("/fonts/password.woff2") format('woff2');
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #21333e;
+	font: 14px OpenSans;
+	-webkit-font-smoothing: antialiased;
+	color: snow;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+	-moz-user-select: none;
+	z-index: 1;
+}
+
+input {
+	display: none;
+}
+
+.upload {
+	display: flex;
+}
+
+.upload .file {
+	width: 200px;
+	height: 45px;
+	background: #910b00;
+	border-radius: 3px 0 0 3px;
+	font: 18px OpenSans-Bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.upload .file:hover {
+	background: #a50b00;
+}
+
+.submit {
+	width: 45px;
+	height: 45px;
+	background: #910b00;
+	border-radius: 0 3px 3px 0;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background: #a50b00;
+}
+
+.submit:after {
+	content: '\e802';
+	font: 20px upload;
+	margin-bottom: 3px;
+}
+
+.settings {
+	width: 200px;
+	margin-top: 6px;
+	padding: 0 13px;
+	line-height: 1;
+}
+
+.rename label {
+	display: flex;
+	cursor: pointer;
+}
+
+.rename span {
+	position: relative;
+}
+
+.rename span:after {
+	content: '';
+	width: 5px;
+	height: 11px;
+	position: absolute;
+	left: 9px;
+	top: 0;
+	border-bottom: 3px solid #00f514;
+	border-right: 3px solid #00f514;
+	transform: rotate(45deg);
+	opacity: 1;
+}
+
+#rename:checked + label span:after {
+	opacity: 0.3;
+}
+
+.password {
+	display: flex;
+	margin-top: 5px;
+}
+
+.password input {
+	display: block;
+	width: 100%;
+	margin-left: 5px;
+	background: transparent;
+	border-bottom: 1px solid #00a514;
+	font: 15px password;
+	overflow: hidden;
+	letter-spacing: 3px;
+	color: snow;
+}
+
+.password input:focus {
+	outline: none;
+	border-bottom: 1px solid #00f514;
+}
+
+.password span {
+	cursor: default;
+}
+
+.console-outer {
+	width: 35%;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	padding: 10px 10px 10px 0;
+}
+
+.console {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	overflow: hidden;
+}
+
+.error {
+	color: red;
+}
+
+.console-message {
+	display: flex;
+	flex: 0 0 auto;
+	margin: 3px 0;
+}
+
+.selected > div:first-child {
+	color: #00ac14;
+}
+
+.selected .files {
+	word-break: break-all;
+	color: #e18700;
+}
+
+.history * {
+	color: dimgrey !important;
+}
+
+noscript {
+	color: red;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/css/link.css">
+	<title>Link</title>
+</head>
+<body class="center">
+{{#def.return}}
+<main>
+	{{ it.group.forEach(item => { }}
+		<a href="/{{= item._id }}">{{= item.file.name + item.file.ext }}</a>
+	{{ }); }}
+</main>
+</body>
+</html>

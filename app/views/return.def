@@ -1,0 +1,29 @@
+<a class="return" href="/" style="">main</a>
+<style>
+	@font-face {
+		font-family: "OpenSans-Semibold";
+		src: url("/fonts/OpenSans-Semibold.woff2") format('woff2');
+	}
+	.return {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		top: -50px;
+		left: -50px;
+		padding: 3px;
+		background-color: #9b003b;
+		transform: rotate(-45deg);
+		text-transform: uppercase;
+	}
+	.return:hover {
+		background-color: #be003f;
+	}
+	.return:link, .return:visited {
+		font: 15px OpenSans-Semibold;
+		color: snow;
+		text-decoration: none;
+	}
+</style>

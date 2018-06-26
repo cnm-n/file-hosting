@@ -1,0 +1,22 @@
+{
+  "name": "file-hosting",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Simple file hosting with koa and mongo",
+  "main": "app.js",
+  "dependencies": {
+    "argon2": "^0.19.3",
+    "busboy": "^0.2.14",
+    "dot": "^1.1.2",
+    "koa": "^2.5.0",
+    "koa-range": "^0.3.0",
+    "koa-router": "^7.4.0",
+    "koa-send": "^4.1.3",
+    "koa-static-cache": "^5.1.2",
+    "mongodb": "^3.0.9",
+    "shortid": "^2.2.8"
+  },
+  "scripts": {
+    "start": "node app/app.js"
+  }
+}
